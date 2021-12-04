@@ -51,7 +51,8 @@ void warnUser(string previous, string current, chrono::microseconds time) {
 }
 
 bool isCryptoAddress(string value) {
-	regex addressRegex("\\b(bc(0([ac-hj-np-z02-9]{39}|[ac-hj-np-z02-9]{59})|1[ac-hj-np-z02-9]{8,87})|[13][a-km-zA-HJ-NP-Z1-9]{25,35})\\b"); //I'll find a regex to match more address formats
+	regex addressRegex("\\b(bc(0([ac-hj-np-z02-9]{39}|[ac-hj-np-z02-9]{59})|1[ac-hj-np-z02-9]{8,87})|[13][a-km-zA-HJ-NP-Z1-9]{25,35})\\b");
+	//I'll work on matching more cryptocurrency address formats.
 	smatch matches;
 	return regex_search(value, matches, addressRegex);
 }
