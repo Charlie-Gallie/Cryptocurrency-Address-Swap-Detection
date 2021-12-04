@@ -1,6 +1,11 @@
 # Cryptocurrency Address Swap Detection
 Alerts the user when the clipboard changes from one cryptocurrency address to another in a short period of time.
 
+# Description
+Some malware will detect a cryptocurrency address in the victims' clipboard and exchange it with a different one, in hopes that the user will deposit cryptocurrency to the exchanged address. A demonstration of such malware can be found in [another of my repositories](https://github.com/Charlie-Gallie/Bitcoin-Address-Swapper).
+<br>
+This program alerts the user when the clipboard changes from one cryptocurrency address to another in a short period of time.
+
 # Usage
 By default, a warning will be instantiated if the clipboard changes from one cryptocurrency address to another in <1 second.
 <br>
